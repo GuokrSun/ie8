@@ -105,13 +105,15 @@ body {
 }
 .imgCenter {
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .poaCenter {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .poa100 {
   position: absolute;
@@ -137,6 +139,11 @@ body {
 }
 /* 首页 */
 .index {
+  overflow: auto;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
   width: 100%;
   height: 100%;
   width: 1960px;
@@ -187,9 +194,12 @@ body {
 .index .menu .userInfo .img-box {
   width: 120px;
   height: 120px;
-  border-radius: 50%;
   overflow: hidden;
   margin-bottom: 22px;
+}
+.index .menu .userInfo .img-box img {
+  behavior: url(pie.htc);
+  border-radius: 50%;
 }
 .index .menu .userInfo h4 {
   font-size: 26px;
@@ -220,6 +230,9 @@ body {
   left: 0;
   width: 100%;
 }
+.index .menu .nav .loginout a i {
+  margin-right: 10px;
+}
 .index .menu .nav a {
   display: block;
   padding: 22px 30px 26px 45px;
@@ -232,27 +245,115 @@ body {
 .index .menu .nav a:hover {
   color: #C7C7C7;
 }
+.index .menu .nav a.nav-cur {
+  background-image: url('../image/b-1.png');
+  background-size: 3px 100%;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  behavior: url(backgroundsize.min.htc);
+}
 .index .menu .nav a i {
   width: 28px;
   height: 28px;
-  margin-right: 10px;
+  margin-right: 11px;
   position: relative;
   top: 4px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
 }
+.index .menu .nav a .icon-right {
+  width: 16px;
+  height: 25px;
+  margin-right: 0;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
 .index .menu .nav a .mr15 {
   margin-right: 15px;
 }
 .index .page {
-  padding: 45px 15px;
+  padding: 45px 36px 45px 25px;
+}
+.index .page .header {
+  color: #868686;
+  overflow: hidden;
+  padding: 18px;
+}
+.index .page .header h3 {
+  float: left;
+  font-size: 25px;
+  padding-top: 10px;
+}
+.index .page .header .btn-msgback {
+  float: right;
+  padding: 12px 36px;
+}
+.index .page .header .btn-msgback i {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  vertical-align: middle;
+}
+.index .page .header .btn-msgback span {
+  font-size: 20px;
+  vertical-align: middle;
+}
+.index .page .content {
+  overflow: hidden;
+}
+.index .page .content .seat {
+  float: left;
+  width: 33.3333%;
+  height: 333px;
+  padding: 18px;
+}
+.index .page .content .seat .bgc-g {
+  height: 100%;
+}
+.index .page .icon-bg {
+  width: 40px;
+  height: 40px;
+  background-color: #545454;
+  border-radius: 50%;
+  behavior: url(pie.htc);
+  box-shadow: 0px 2px 2px 0px #1E1E1E;
+  padding-top: 8px ;
+  overflow: hidden;
+}
+.index .page .icon-bg i {
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+.index .page .seat-user {
+  text-align: center;
+  padding-top: 50px;
+}
+.index .page .seat-user div {
+  padding: 35px 0 22px 9px;
+  color: #fff;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+.index .page .seat-user p {
+  color: #868686;
+  font-size: 22px;
 }
 .icon-data {
   background-image: url('../image/nav-1.png');
 }
 .icon-user {
   background-image: url('../image/nav-2.png');
+}
+.icon-user2 {
+  background-image: url('../image/icon-4.png');
 }
 .icon-change {
   background-image: url('../image/nav-3.png');
@@ -269,8 +370,14 @@ body {
 .icon-loginout {
   background-image: url('../image/nav-7.png');
 }
+.icon-right {
+  background-image: url('../image/icon-right.png');
+}
+.icon-msg {
+  background-image: url('../image/icon-1.png');
+}
 .bgc-g {
-  background-color: #292929;
-  border-radius: 10px;
+  border: 1px solid red;
+  border-radius: 5px;
   behavior: url(pie.htc);
 }
