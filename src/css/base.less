@@ -6,23 +6,12 @@
 
 /* 首页 */
 .index {
-    overflow: auto;
-    transform: scale(.8);
-    transform-origin: 0 0;
     width: 100%;
     height: 100%;
-    width: 1960px;
-    height: 1080px;
-    min-height: 1080px;
-    background-image: url('../image/bg.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
     padding-left: 300px;
+    background-color: #1E1E1E;
     &>div{
         position: relative;
-        z-index: 2;
-        opacity: .9;
         height: 100%;
     }
     // 导航区
@@ -34,7 +23,7 @@
         height: 100%;
         overflow: hidden;
         padding-top: 414px;
-        // background-color: #292929;
+        background-color: #292929;
         .logo {
             padding: 53px 0 0;
             position: absolute;
@@ -49,12 +38,12 @@
         }
         .userInfo {
             position: absolute;
-            top: 130px;
+            top: 133px;
             left: 0;
             width: 100%;
             .img-box {
-                width: 120px;
-                height: 120px;
+                width: 118px;
+                height: 118px;
                 overflow: hidden;
                 margin-bottom: 22px;
                 img {
@@ -75,14 +64,18 @@
                 padding-right: 3px;
                 letter-spacing: -.5px;
                 font-weight: 600;
+                line-height: 1.5;
             }
         }
         .nav {
             overflow-y: auto;
             height: 100%;
-            position: relative;
-            padding-bottom: 84px;
-            border-top: 3px solid #5C5C5C;
+            ul {
+                border-top: 3px solid #5C5C5C;
+                position: relative;
+                padding-bottom: 114px;
+                min-height: 100%;
+            }
             li {
                 border-bottom: 3px solid #5C5C5C;
                 border-top: 1px solid transparent;
@@ -116,7 +109,7 @@
                 i {
                     width: 28px;
                     height: 28px;
-                    margin-right: 11px;
+                    margin-right: 12px;
                     position: relative;
                     top: 4px;
                     background-repeat: no-repeat;
@@ -132,7 +125,7 @@
                     right: 25px;
                 }
                 .mr15 {
-                    margin-right: 15px;
+                    margin-right: 16px;
                 }
             }
         }
@@ -174,20 +167,35 @@
                 width: 33.3333%;
                 height: 333px;
                 padding: 18px;
-                .bgc-g {
+                &>.bgc-g {
                     height: 100%;
+                }
+                .btn-g {
+                    text-align: center;
+                    padding: 10px 40px;
+                    color: #BEBEBE;
+                    margin-left: 6px;
+                    cursor: pointer;
+                    background-color: #545454;
+                    &:active, &:hover {
+                        opacity: .9;
+                    }
                 }
             }
         }
         .icon-bg {
-            width: 40px;
-            height: 40px;
+            width: 42px;
+            height: 42px;
             background-color: #545454;
             border-radius: 50%;
             behavior:url(pie.htc);
-            box-shadow: 0px 2px 2px 0px #1E1E1E;
-            padding-top: 8px ;
+            box-shadow: 0px 2px 6px 0px #1E1E1E;
+            padding-top: 9px;
             overflow: hidden;
+            position: relative;
+            left: 1px;
+            text-align: center;
+            vertical-align: middle;
             i {
                 width: 24px;
                 height: 24px;
@@ -197,19 +205,162 @@
             }
         }
         .seat-user {
-            text-align: center;
-            padding-top: 50px;
-            div {
-                padding: 35px 0 22px 9px;
-                color: #fff;
-                font-size: 40px;
-                letter-spacing: 1px;
-            }
-            p {
-                color: #868686;
-                font-size: 22px;
+            .bgc-g {
+                text-align: center;
+                padding-top: 50px;
+                div {
+                    padding: 35px 0 22px 9px;
+                    color: #fff;
+                    font-size: 40px;
+                    letter-spacing: 1px;
+                }
+                p {
+                    color: #868686;
+                    font-size: 22px;
+                }
             }
         }
+        .seat-account {
+            .bgc-g {
+                padding: 18px;
+            }
+            .saccount-header {
+                padding: 12px 44px 24px;
+                border-bottom: 3px solid #303030;
+                .icon-bg {
+                    margin-right: 14px;
+                }
+                span {
+                    color: #868686;
+                    font-size: 22px;
+                    vertical-align: middle;
+                    padding-bottom: 1px;
+                }
+            }
+            .saccount-content {
+                padding-top: 19px;
+                overflow: hidden;
+                .sac-balance {
+                    float: left;
+                    padding-left: 11px;
+                    p {
+                        font-size: 41px;
+                        color: #fff;
+                        margin-bottom: 24px;
+                    }
+                    .bgc-g {
+                        text-align: center;
+                        padding: 10px 40px;
+                        color: #BEBEBE;
+                        margin-left: 6px;
+                        cursor: pointer;
+                        &:active, &:hover {
+                            opacity: .9;
+                        }
+                    }
+                }
+                .sac-lastmonth {
+                    float: right;
+                    p {
+                        color: #989898;
+                        font-size: 20px;
+                        padding-left: 3px;
+                    }
+                    .sac-lm-money {
+                        padding: 1px 2px 16px;
+                        font-size: 26px;
+                        em {
+                            color: #565656;
+                        }
+                    }
+                    .sac-progress {
+                        border-radius: 2px;
+                        overflow: hidden;
+                        height: 4px;
+                        width: 182px;
+                        background-color: #383838;
+                        position: relative;
+                        span {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                            background-color: #29BBCC;
+                        }
+                    }
+                    .sac-lm-date {
+                        padding: 30px 0 0 6px;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        .seat-use {
+            .bgc-g {
+                padding: 18px 24px;
+            }
+            .saccount-header {
+                padding: 12px 0 24px;
+                .icon-bg {
+                    margin-right: 14px;
+                }
+                span {
+                    color: #868686;
+                    font-size: 22px;
+                    vertical-align: middle;
+                    padding-bottom: 1px;
+                }
+            }
+        }
+        .seat-plan {
+            .bgc-g {
+                padding: 18px;
+            }
+            .saccount-header {
+                padding: 12px 10px 12px 17px;
+                border-bottom: 2px solid #303030;
+                position: relative;
+                span {
+                    color: #868686;
+                    font-size: 22px;
+                    vertical-align: middle;
+                    padding-bottom: 1px;
+                }
+                .bgc-g {
+                    position: absolute;
+                    right: 10px;
+                    top: 8px;
+                    padding: 5px 9px;
+                    color: #BEBEBE;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+// 测试
+.test {
+    overflow: auto;
+    transform: scale(.8);
+    transform-origin: 0 0;
+    width: 1960px;
+    height: 1080px;
+    min-height: 1080px;
+    background-image: url('../image/bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-color: transparent;
+    &>div{
+        z-index: 2;
+        opacity: .9;
+    }
+    .menu {
+        background-color: transparent;
+    }
+    .bgc-g {
+        background-color: transparent;
+        border: 1px solid red;
     }
 }
 
@@ -229,8 +380,14 @@
 .icon-use {
     background-image: url('../image/nav-4.png');
 }
+.icon-use2 {
+    background-image: url('../image/icon-3.png');
+}
 .icon-pay {
     background-image: url('../image/nav-5.png');
+}
+.icon-pay2 {
+    background-image: url('../image/icon-2.png');
 }
 .icon-other {
     background-image: url('../image/nav-6.png');
@@ -247,8 +404,8 @@
 
 // 颜色
 .bgc-g {
-    // background-color: #292929;
-    border: 1px solid red;
-    border-radius: 5px;
+    background-color: #292929;
+    border: 1px solid transparent;
+    border-radius: 8px;
     behavior:url(pie.htc);
 }

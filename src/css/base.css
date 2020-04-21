@@ -139,26 +139,13 @@ body {
 }
 /* 首页 */
 .index {
-  overflow: auto;
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
   width: 100%;
   height: 100%;
-  width: 1960px;
-  height: 1080px;
-  min-height: 1080px;
-  background-image: url('../image/bg.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
   padding-left: 300px;
+  background-color: #1E1E1E;
 }
 .index > div {
   position: relative;
-  z-index: 2;
-  opacity: 0.9;
   height: 100%;
 }
 .index .menu {
@@ -169,6 +156,7 @@ body {
   height: 100%;
   overflow: hidden;
   padding-top: 414px;
+  background-color: #292929;
 }
 .index .menu .logo {
   padding: 53px 0 0;
@@ -184,7 +172,7 @@ body {
 }
 .index .menu .userInfo {
   position: absolute;
-  top: 130px;
+  top: 133px;
   left: 0;
   width: 100%;
   color: #fff;
@@ -192,8 +180,8 @@ body {
   line-height: 1.6;
 }
 .index .menu .userInfo .img-box {
-  width: 120px;
-  height: 120px;
+  width: 118px;
+  height: 118px;
   overflow: hidden;
   margin-bottom: 22px;
 }
@@ -211,13 +199,17 @@ body {
   padding-right: 3px;
   letter-spacing: -0.5px;
   font-weight: 600;
+  line-height: 1.5;
 }
 .index .menu .nav {
   overflow-y: auto;
   height: 100%;
-  position: relative;
-  padding-bottom: 84px;
+}
+.index .menu .nav ul {
   border-top: 3px solid #5C5C5C;
+  position: relative;
+  padding-bottom: 114px;
+  min-height: 100%;
 }
 .index .menu .nav li {
   border-bottom: 3px solid #5C5C5C;
@@ -255,7 +247,7 @@ body {
 .index .menu .nav a i {
   width: 28px;
   height: 28px;
-  margin-right: 11px;
+  margin-right: 12px;
   position: relative;
   top: 4px;
   background-repeat: no-repeat;
@@ -271,7 +263,7 @@ body {
   right: 25px;
 }
 .index .menu .nav a .mr15 {
-  margin-right: 15px;
+  margin-right: 16px;
 }
 .index .page {
   padding: 45px 36px 45px 25px;
@@ -312,18 +304,34 @@ body {
   height: 333px;
   padding: 18px;
 }
-.index .page .content .seat .bgc-g {
+.index .page .content .seat > .bgc-g {
   height: 100%;
 }
+.index .page .content .seat .btn-g {
+  text-align: center;
+  padding: 10px 40px;
+  color: #BEBEBE;
+  margin-left: 6px;
+  cursor: pointer;
+  background-color: #545454;
+}
+.index .page .content .seat .btn-g:active,
+.index .page .content .seat .btn-g:hover {
+  opacity: 0.9;
+}
 .index .page .icon-bg {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   background-color: #545454;
   border-radius: 50%;
   behavior: url(pie.htc);
-  box-shadow: 0px 2px 2px 0px #1E1E1E;
-  padding-top: 8px ;
+  box-shadow: 0px 2px 6px 0px #1E1E1E;
+  padding-top: 9px;
   overflow: hidden;
+  position: relative;
+  left: 1px;
+  text-align: center;
+  vertical-align: middle;
 }
 .index .page .icon-bg i {
   width: 24px;
@@ -332,19 +340,156 @@ body {
   background-size: 100% 100%;
   background-position: center;
 }
-.index .page .seat-user {
+.index .page .seat-user .bgc-g {
   text-align: center;
   padding-top: 50px;
 }
-.index .page .seat-user div {
+.index .page .seat-user .bgc-g div {
   padding: 35px 0 22px 9px;
   color: #fff;
   font-size: 40px;
   letter-spacing: 1px;
 }
-.index .page .seat-user p {
+.index .page .seat-user .bgc-g p {
   color: #868686;
   font-size: 22px;
+}
+.index .page .seat-account .bgc-g {
+  padding: 18px;
+}
+.index .page .seat-account .saccount-header {
+  padding: 12px 44px 24px;
+  border-bottom: 3px solid #303030;
+}
+.index .page .seat-account .saccount-header .icon-bg {
+  margin-right: 14px;
+}
+.index .page .seat-account .saccount-header span {
+  color: #868686;
+  font-size: 22px;
+  vertical-align: middle;
+  padding-bottom: 1px;
+}
+.index .page .seat-account .saccount-content {
+  padding-top: 19px;
+  overflow: hidden;
+}
+.index .page .seat-account .saccount-content .sac-balance {
+  float: left;
+  padding-left: 11px;
+}
+.index .page .seat-account .saccount-content .sac-balance p {
+  font-size: 41px;
+  color: #fff;
+  margin-bottom: 24px;
+}
+.index .page .seat-account .saccount-content .sac-balance .bgc-g {
+  text-align: center;
+  padding: 10px 40px;
+  color: #BEBEBE;
+  margin-left: 6px;
+  cursor: pointer;
+}
+.index .page .seat-account .saccount-content .sac-balance .bgc-g:active,
+.index .page .seat-account .saccount-content .sac-balance .bgc-g:hover {
+  opacity: 0.9;
+}
+.index .page .seat-account .saccount-content .sac-lastmonth {
+  float: right;
+}
+.index .page .seat-account .saccount-content .sac-lastmonth p {
+  color: #989898;
+  font-size: 20px;
+  padding-left: 3px;
+}
+.index .page .seat-account .saccount-content .sac-lastmonth .sac-lm-money {
+  padding: 1px 2px 16px;
+  font-size: 26px;
+}
+.index .page .seat-account .saccount-content .sac-lastmonth .sac-lm-money em {
+  color: #565656;
+}
+.index .page .seat-account .saccount-content .sac-lastmonth .sac-progress {
+  border-radius: 2px;
+  overflow: hidden;
+  height: 4px;
+  width: 182px;
+  background-color: #383838;
+  position: relative;
+}
+.index .page .seat-account .saccount-content .sac-lastmonth .sac-progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #29BBCC;
+}
+.index .page .seat-account .saccount-content .sac-lastmonth .sac-lm-date {
+  padding: 30px 0 0 6px;
+  font-size: 18px;
+}
+.index .page .seat-use .bgc-g {
+  padding: 18px 24px;
+}
+.index .page .seat-use .saccount-header {
+  padding: 12px 0 24px;
+}
+.index .page .seat-use .saccount-header .icon-bg {
+  margin-right: 14px;
+}
+.index .page .seat-use .saccount-header span {
+  color: #868686;
+  font-size: 22px;
+  vertical-align: middle;
+  padding-bottom: 1px;
+}
+.index .page .seat-plan .bgc-g {
+  padding: 18px;
+}
+.index .page .seat-plan .saccount-header {
+  padding: 12px 10px 12px 17px;
+  border-bottom: 2px solid #303030;
+  position: relative;
+}
+.index .page .seat-plan .saccount-header span {
+  color: #868686;
+  font-size: 22px;
+  vertical-align: middle;
+  padding-bottom: 1px;
+}
+.index .page .seat-plan .saccount-header .bgc-g {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  padding: 5px 9px;
+  color: #BEBEBE;
+  font-size: 20px;
+}
+.test {
+  overflow: auto;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  width: 1960px;
+  height: 1080px;
+  min-height: 1080px;
+  background-image: url('../image/bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-color: transparent;
+}
+.test > div {
+  z-index: 2;
+  opacity: 0.9;
+}
+.test .menu {
+  background-color: transparent;
+}
+.test .bgc-g {
+  background-color: transparent;
+  border: 1px solid red;
 }
 .icon-data {
   background-image: url('../image/nav-1.png');
@@ -361,8 +506,14 @@ body {
 .icon-use {
   background-image: url('../image/nav-4.png');
 }
+.icon-use2 {
+  background-image: url('../image/icon-3.png');
+}
 .icon-pay {
   background-image: url('../image/nav-5.png');
+}
+.icon-pay2 {
+  background-image: url('../image/icon-2.png');
 }
 .icon-other {
   background-image: url('../image/nav-6.png');
@@ -377,7 +528,8 @@ body {
   background-image: url('../image/icon-1.png');
 }
 .bgc-g {
-  border: 1px solid red;
-  border-radius: 5px;
+  background-color: #292929;
+  border: 1px solid transparent;
+  border-radius: 8px;
   behavior: url(pie.htc);
 }

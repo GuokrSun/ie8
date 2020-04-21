@@ -11,7 +11,7 @@
         <script type="text/javascript" src="../script/PIE.js"></script>
     <![endif]-->
 </head>
-<body class="index">
+<body class="index test">
     <div class="menu">
         <div class="logo">
             <div class="img-box">
@@ -20,56 +20,58 @@
         </div>
         <div class="userInfo">
             <div class="img-box">
-                <img src="../image/bg.png" alt="" class="imgCenter" width="120">
+                <img src="../image/head.png" alt="" class="imgCenter" width="120">
             </div>
             <h4>珍芙妮·苏珊</h4>
             <p>zx1013111279</p>
         </div>
-        <ul class="nav">
-            <li>
-                <a href="javascript:;" class="nav-cur">
-                    <i class="icon-data"></i>
-                    <span>数据中心</span>
-                    <i class="icon-right"></i>
-                </a>
-            </li>
-            <li>
-                <a href="javascript:;">
-                    <i class="icon-user mr15"></i>
-                    <span>个人设置</span>
-                </a>
-            </li>
-            <li>
-                <a href="javascript:;">
-                    <i class="icon-change mr15"></i>
-                    <span>更改规划</span>
-                </a>
-            </li>
-            <li>
-                <a href="javascript:;">
-                    <i class="icon-use mr15"></i>
-                    <span>使用统计</span>
-                </a>
-            </li>
-            <li>
-                <a href="javascript:;">
-                    <i class="icon-pay"></i>
-                    <span>消费统计</span>
-                </a>
-            </li>
-            <li>
-                <a href="javascript:;">
-                    <i class="icon-other" style="left: 2px;"></i>
-                    <span>其他服务</span>
-                </a>
-            </li>
-            <li class="loginout">
-                <a href="javascript:;">
-                    <i class="icon-loginout"></i>
-                    <span>退出登录</span>
-                </a>
-            </li>
-        </ul>
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="javascript:;" class="nav-cur">
+                        <i class="icon-data"></i>
+                        <span>数据中心</span>
+                        <i class="icon-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="icon-user mr15"></i>
+                        <span>个人设置</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="icon-change mr15"></i>
+                        <span>更改规划</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="icon-use mr15"></i>
+                        <span>使用统计</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="icon-pay"></i>
+                        <span>消费统计</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="icon-other" style="left: 2px;"></i>
+                        <span>其他服务</span>
+                    </a>
+                </li>
+                <li class="loginout">
+                    <a href="javascript:;">
+                        <i class="icon-loginout"></i>
+                        <span>退出登录</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
     <div class="page">
         <div class="header">
@@ -80,24 +82,55 @@
             </div>
         </div>
         <div class="content">
-            <div class="seat">
-                <div class="bgc-g seat-user">
+            <div class="seat seat-user">
+                <div class="bgc-g">
                     <em class="icon-bg"><i class="icon-user2"></i></em>
                     <div>1800678</div>
                     <p>用户数量</p>
                 </div>
             </div>
-            <div class="seat">
-                <div class="bgc-g"></div>
+            <div class="seat seat-account">
+                <div class="bgc-g">
+                    <div class="saccount-header">
+                        <em class="icon-bg"><i class="icon-pay2"></i></em>
+                        <span>你的账户</span>
+                    </div>
+                    <div class="saccount-content">
+                        <div class="sac-balance">
+                            <p>￥158.28</p>
+                            <span class="bgc-g btn-g">充值</span>
+                        </div>
+                        <div class="sac-lastmonth">
+                            <p>上个月支出</p>
+                            <p class="sac-lm-money"><em>￥</em>158.28</p>
+                            <div class="sac-progress">
+                                <span style="width: 50%;"></span>
+                            </div>
+                            <p class="sac-lm-date">剩余16天</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="seat" style="padding-left: 12px;">
-                <div class="bgc-g"></div>
+            <div class="seat seat-use" style="padding-left: 12px;">
+                <div class="bgc-g">
+                    <div class="saccount-header">
+                        <em class="icon-bg"><i class="icon-use2"></i></em>
+                        <span>使用统计</span>
+                    </div>
+                </div>
             </div>
             <div class="seat" style="width: 66.6666%;height: 517px;">
                 <div class="bgc-g"></div>
             </div>
-            <div class="seat" style="padding-left: 12px;height: 517px;">
-                <div class="bgc-g"></div>
+            <div class="seat seat-plan" style="padding-left: 12px;height: 517px;">
+                <div class="bgc-g">
+                    <div class="saccount-header">
+                        <span>当前规划</span>
+                        <em class="bgc-g btn-g">修改规划</em>
+                    </div>
+                    <div class="saccount-content">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
