@@ -7,11 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <title>demo</title>
     <link rel="stylesheet" href="../css/base.css">
-    <!--[if lt IE 10]>
+    <!--[if lt IE 8]>
+        <script type="text/javascript" src="../script/IE8.js"></script>
         <script type="text/javascript" src="../script/PIE.js"></script>
     <![endif]-->
 </head>
-<body class="index test">
+<!-- 重合度 测验 -->
+<!-- <body class="index test"> -->
+<!-- 正常 -->
+<body class="index">
     <div class="menu">
         <div class="logo">
             <div class="img-box">
@@ -117,22 +121,176 @@
                         <em class="icon-bg"><i class="icon-use2"></i></em>
                         <span>使用统计</span>
                     </div>
+                    <div class="saccount-content clearfix">
+                        <div class="suc-circle fl">
+                            <div id="processingbar" class="processingbar" val="30%"><em>70%</em></div>
+                        </div>
+                        <div class="suc-flow fr">
+                            <i></i>
+                            <h4>158.58 GB</h4>
+                            <p>已使用</p>
+                            <div>40025.MB</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="seat" style="width: 66.6666%;height: 517px;">
-                <div class="bgc-g"></div>
+            <div class="seat seat-detail" style="width: 66.6666%;height: 525px;">
+               <div class="bgc-g">
+                    <div class="saccount-header">
+                        <span>使用明细</span>
+                        <div class="sdh-select clearfix">
+                            <div class="sdhs-tabs fl">
+                                <div class="sdhs-tab">
+                                    <ul class="clearfix">
+                                        <li class="detail-cur"><span>月</span></li>
+                                        <li><span>周</span></li>
+                                        <li><span>日期</span></li>
+                                    </ul>
+                                </div>
+                                <p class="sdhs-date">2017.11.03</p>
+                            </div>
+                            <div class="btn-bg fr">查看历史</div>
+                        </div>
+                    </div>
+                    <div class="saccount-content">
+                        <div class="sdc-bars">
+                            <div class="sdc-bars-box sdc-bars-month">
+                                <ul class="clearfix">
+                                    <li>
+                                        <div><span class="sdc-bar-up" style="height: 30%;"></span></div>
+                                        <div><span class="sdc-bar-down" style="height: 30%;"></span></div>
+                                    </li>
+                                    <li>
+                                        <div><span class="sdc-bar-up" style="height: 30%;"></span></div>
+                                        <div><span class="sdc-bar-down" style="height: 30%;"></span></div>
+                                    </li>
+                                    <li>
+                                        <div><span class="sdc-bar-up" style="height: 30%;"></span></div>
+                                        <div><span class="sdc-bar-down" style="height: 30%;"></span></div>
+                                    </li>
+                                    <li>
+                                        <div><span class="sdc-bar-up" style="height: 30%;"></span></div>
+                                        <div><span class="sdc-bar-down" style="height: 30%;"></span></div>
+                                    </li>
+                                    <li>
+                                        <div><span class="sdc-bar-up" style="height: 30%;"></span></div>
+                                        <div><span class="sdc-bar-down" style="height: 30%;"></span></div>
+                                    </li>
+                                    <li>
+                                        <div><span class="sdc-bar-up" style="height: 30%;"></span></div>
+                                        <div><span class="sdc-bar-down" style="height: 30%;"></span></div>
+                                    </li>
+                                    <li>
+                                        <div><span class="sdc-bar-up" style="height: 30%;"></span></div>
+                                        <div><span class="sdc-bar-down" style="height: 30%;"></span></div>
+                                    </li>
+                                    <li>
+                                        <div><span class="sdc-bar-up" style="height: 87%;"></span></div>
+                                        <div><span class="sdc-bar-down" style="height: 83%;"></span></div>
+                                    </li>
+                                    <li>
+                                        <div><span class="sdc-bar-up" style="height: 30%;"></span></div>
+                                        <div><span class="sdc-bar-down" style="height: 30%;"></span></div>
+                                    </li>
+                                    <li>
+                                        <div><span class="sdc-bar-up" style="height: 30%;"></span></div>
+                                        <div><span class="sdc-bar-down" style="height: 30%;"></span></div>
+                                    </li>
+                                    <li>
+                                        <div><span class="sdc-bar-up" style="height: 30%;"></span></div>
+                                        <div><span class="sdc-bar-down" style="height: 30%;"></span></div>
+                                    </li>
+                                    <li>
+                                        <div><span class="sdc-bar-up" style="height: 30%;"></span></div>
+                                        <div><span class="sdc-bar-down" style="height: 30%;"></span></div>
+                                    </li>
+                                </ul>
+                                <div class="sdc-bar-hr"></div>
+                                <div class="sdc-bar-hr" style="top: 81%; z-index: 1;">
+                                    <em class="sdc-bar-hr-tip">
+                                        <i class="icon-netDown2"></i>
+                                        <span>60.5MB</span>
+                                    </em>
+                                    <em class="sdc-bar-hr-circle"><i></i></em>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sdc-times">
+                            <ul>
+                                <li><span>09:00</span></li>
+                                <li><span>11:00</span></li>
+                                <li><span>13:00</span></li>
+                                <li><span>15:00</span></li>
+                                <li><span>17:00</span></li>
+                                <li><span>19:00</span></li>
+                                <li><span>21:00</span></li>
+                                <li><span>23:00</span></li>
+                                <li><span>09:00</span></li>
+                                <li><span>11:00</span></li>
+                                <li><span>13:00</span></li>
+                                <li><span>15:00</span></li>
+
+                                <li><span>07:00</span></li>
+                                <li><span>07:00</span></li>
+                                <li><span>07:00</span></li>
+                                <li><span>07:00</span></li>
+                                <li><span>07:00</span></li>
+                                <li><span>07:00</span></li>
+                                <li><span>07:00</span></li>
+                                <li><span>07:00</span></li>
+                                <li><span>07:00</span></li>
+                                <li><span>07:00</span></li>
+                                <li><span>07:00</span></li>
+                                <li><span>07:00</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="seat seat-plan" style="padding-left: 12px;height: 517px;">
+            <div class="seat seat-plan" style="padding-left: 12px;height: 525px;">
                 <div class="bgc-g">
                     <div class="saccount-header">
                         <span>当前规划</span>
                         <em class="bgc-g btn-g">修改规划</em>
                     </div>
                     <div class="saccount-content">
+                        <div class="img-box">
+                            <img src="../image/img-1.png" alt="">
+                        </div>
+                        <div class="spc-title">最佳网络</div>
+                        <div class="spc-net clearfix">
+                            <span class="fl">
+                                <i class="icon-netup"></i>
+                                <em>10.5MBps</em>
+                            </span>
+                            <span class="fr">
+                                <i class="icon-netDown"></i>
+                                <em>5.8MBps</em>
+                            </span>
+                        </div>
+                        <p class="spc-hide">点击优化按钮加快网络传输速度</p>
                     </div>
+                    <div class="btn-box">优化</div>
                 </div>
             </div>
         </div>
     </div>
 </body>
+<script src="../script/jquery-1.12.4.min.js"></script>
+<!--[if lt IE 8]>
+    <script type="text/javascript" src="../script/cycle.js"></script>
+    <script type="text/javascript" src="../script/raphael.js"></script>
+<![endif]-->
+<!--[if !IE]><!-->
+    <script type="text/javascript" src="../script/cycle.js"></script>
+    <script type="text/javascript" src="../script/raphael.js"></script>
+<!--<![endif]-->
+<!--[if gte IE 8]>
+    <script type="text/javascript" src="../script/cycle.js"></script>
+    <script type="text/javascript" src="../script/raphael.js"></script>
+<![endif]-->
+<script>
+    $(function(){
+    });
+</script>
 </html>

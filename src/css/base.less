@@ -3,11 +3,29 @@
 .mr15 {
     margin-right: 15px;
 }
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.clearfix{*zoom:1;}
+.clearfix:before,.clearfix:after{
+    content:"";
+    display:table;
+    line-height:0;
+    visibility:hidden;
+}
+.clearfix:after{
+    clear:both;
+}
 
 /* 首页 */
 .index {
     width: 100%;
     height: 100%;
+    min-width: 1780px;
+    min-height: 1060px;
     padding-left: 300px;
     background-color: #1E1E1E;
     &>div{
@@ -22,7 +40,7 @@
         top: 0;
         height: 100%;
         overflow: hidden;
-        padding-top: 414px;
+        padding-top: 422px;
         background-color: #292929;
         .logo {
             padding: 53px 0 0;
@@ -38,14 +56,14 @@
         }
         .userInfo {
             position: absolute;
-            top: 133px;
+            top: 136px;
             left: 0;
             width: 100%;
             .img-box {
                 width: 118px;
                 height: 118px;
                 overflow: hidden;
-                margin-bottom: 22px;
+                margin-bottom: 25px;
                 img {
                     behavior: url(pie.htc);
                     border-radius: 50%;
@@ -83,7 +101,7 @@
             .loginout {
                 border: none;
                 position: absolute;
-                bottom: 30px;
+                bottom: 28px;
                 left: 0;
                 width: 100%;
                 a i {
@@ -92,7 +110,7 @@
             }
             a {
                 display: block;
-                padding: 22px 30px 26px 45px;
+                padding: 23px 30px 27px 45px;
                 color: #868686;
                 font-size: 24px;
                 line-height: 1;
@@ -132,7 +150,7 @@
     }
     // 内容区
     .page {
-        padding: 45px 36px 45px 25px;
+        padding: 45px 36px 15px 25px;
         .header {
             color: #868686;
             overflow: hidden;
@@ -144,7 +162,10 @@
             }
             .btn-msgback {
                 float: right;
-                padding: 12px 36px;
+                position: relative;
+                top: 1px;
+                padding: 14px 35px;
+                cursor: pointer;
                 i {
                     width: 25px;
                     height: 25px;
@@ -158,14 +179,17 @@
                     font-size: 20px;
                     vertical-align: middle;
                 }
+                &:active, &:hover {
+                    opacity: .9;
+                }
             }
         }
         .content {
-            overflow: hidden;
+            // overflow: hidden;
             .seat {
                 float: left;
                 width: 33.3333%;
-                height: 333px;
+                height: 338px;
                 padding: 18px;
                 &>.bgc-g {
                     height: 100%;
@@ -189,7 +213,7 @@
             background-color: #545454;
             border-radius: 50%;
             behavior:url(pie.htc);
-            box-shadow: 0px 2px 6px 0px #1E1E1E;
+            box-shadow: 0px 2px 6px 0px #464646;
             padding-top: 9px;
             overflow: hidden;
             position: relative;
@@ -209,7 +233,7 @@
                 text-align: center;
                 padding-top: 50px;
                 div {
-                    padding: 35px 0 22px 9px;
+                    padding: 40px 0 22px 9px;
                     color: #fff;
                     font-size: 40px;
                     letter-spacing: 1px;
@@ -225,8 +249,8 @@
                 padding: 18px;
             }
             .saccount-header {
-                padding: 12px 44px 24px;
-                border-bottom: 3px solid #303030;
+                padding: 12px 44px 26px;
+                border-bottom: 2px solid #303030;
                 .icon-bg {
                     margin-right: 14px;
                 }
@@ -238,15 +262,18 @@
                 }
             }
             .saccount-content {
-                padding-top: 19px;
+                padding-top: 18px;
                 overflow: hidden;
+                p {
+                    line-height: 1.5;
+                }
                 .sac-balance {
                     float: left;
                     padding-left: 11px;
                     p {
                         font-size: 41px;
                         color: #fff;
-                        margin-bottom: 24px;
+                        margin-bottom: 20px;
                     }
                     .bgc-g {
                         text-align: center;
@@ -267,7 +294,7 @@
                         padding-left: 3px;
                     }
                     .sac-lm-money {
-                        padding: 1px 2px 16px;
+                        padding: 1px 2px 13px;
                         font-size: 26px;
                         em {
                             color: #565656;
@@ -300,7 +327,7 @@
                 padding: 18px 24px;
             }
             .saccount-header {
-                padding: 12px 0 24px;
+                padding: 12px 0 0px;
                 .icon-bg {
                     margin-right: 14px;
                 }
@@ -311,13 +338,233 @@
                     padding-bottom: 1px;
                 }
             }
+            .saccount-content {
+                padding: 0 11px 0 3px;
+            }
+            .suc-circle{
+                .processingbar{
+                    position: relative;
+                    width: 180px;
+                    height: 180px;
+                    em {
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        line-height: 1;
+                        font-size: 24px;
+                        color: #868686;
+                        text-align: center;
+                        width: 100%;
+                        margin-top: -12px;
+                    }
+                }
+            }
+            .suc-flow{
+                position: relative;
+                padding-top: 38px;
+                h4 {
+                    color: #fff;
+                    font-size: 39px;
+                    font-weight: 500;
+                    margin-bottom: 30px;
+                }
+                p {
+                    font-size: 15px;
+                    color: #999;
+                    margin-bottom: 17px;
+                    padding-left: 3px;
+                    letter-spacing: 2px;
+                }
+                div {
+                    font-size: 29px;
+                    color: #BDBDBD;
+                    padding-left: 3px;
+                }
+            }
+        }
+        .seat-detail {
+            .bgc-g {
+                padding: 18px 18px 10px 18px;
+                overflow: hidden;
+            }
+            .saccount-header {
+                padding: 13px 10px 17px 12px;
+                position: relative;
+                span {
+                    color: #868686;
+                    font-size: 22px;
+                }
+                .sdh-select {
+                    position: absolute;
+                    top: 12px;
+                    right: 17px;
+                }
+                .sdhs-tabs {
+                    position: relative;
+                    margin-right: 26px;
+                    .sdhs-date {
+                        position: absolute;
+                        left: 0;
+                        bottom: -30px;
+                        color: #919191;
+                        font-size: 19px;
+                    }
+                }
+                .sdhs-tab {
+                    li {
+                        float: left;
+                        span {
+                            cursor: pointer;
+                            font-size: 19px;
+                            padding: 3px 8px 4px;
+                            color: #A9A9A9;
+                            border-bottom: 3px solid transparent;
+                        }
+                        &:active, &:hover, &.detail-cur {
+                            span {
+                                color: #BEBEBE;
+                                border-bottom-color: #2BB4B1;
+                            }
+                        }
+                    }
+                }
+                .btn-bg {
+                    border: 1px solid #BEBEBE;
+                    border-radius: 5px;
+                    font-size: 20px;
+                    padding: 3px 8px;
+                    color: #BEBEBE;
+                    behavior:url(pie.htc);
+                    cursor: pointer;
+                    &:active, &:hover {
+                        opacity: .9;
+                    }
+                }
+            }
+            .saccount-content {
+            }
+            .sdc-bars {
+                height: 270px;
+                padding: 32px 25px 20px 10px;
+                box-sizing: content-box;
+                .sdc-bars-box {
+                    height: 100%;
+                    position: relative;
+                    &.sdc-bars-month {
+                        li {
+                            width: 100 / 12 * 1%;
+                        }
+                    }
+                    ul {
+                        position: relative;
+                        z-index: 2;
+                    }
+                    ul, li {
+                        height: 100%;
+                    }
+                    li {
+                        float: left;
+                        &>div{
+                            height: 50%;
+                            width: 10px;
+                            margin: 0 auto;
+                            position: relative;
+                            span {
+                                position: absolute;
+                                left: 0;
+                                width: 100%;
+                                behavior:url(pie.htc);
+                            }
+                        }
+                    }
+                    .sdc-bar-up {
+                        bottom: 0;
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+                        background-color: #FB3747;
+                        background: linear-gradient(top , #F6A055, #F32947 100%);
+                    }
+                    .sdc-bar-down {
+                        bottom: top;
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                        background-color: #29BDE3;
+                        background: linear-gradient(top , #20B5EE, #2ED9D5 100%)
+                    }
+                    .sdc-bar-hr {
+                        position: absolute;
+                        left: -10%;
+                        top: 50%;
+                        height: 2px;
+                        background-color: #505052;
+                        width: 120%;
+                        z-index: 3;
+                    }
+                    .sdc-bar-hr-tip {
+                        position: absolute;
+                        left: 8.5%;
+                        top: -17px;
+                        background-color: #7E7E7E;
+                        border-radius: 20px;
+                        behavior:url(pie.htc);
+                        padding: 8px 6px;
+                        color: #BEBEBE;
+                        i {
+                            width: 14px;
+                            height: 18px;
+                            background-repeat: no-repeat;
+                            background-size: 100% 100%;
+                            background-position: center;
+                        }
+                        span {
+                            line-height: 1;
+                            font-size: 18px;
+                        }
+                    }
+                    .sdc-bar-hr-circle {
+                        position: absolute;
+                        left: 66.5%;
+                        top: -8px;
+                        border: 3px solid #505052;
+                        padding: 3px;
+                        border-radius: 50%;
+                        line-height: 1;
+                        font-size: 0;
+                        behavior:url(pie.htc);
+                        i {
+                            width: 8px;
+                            height: 8px;
+                            background-color: #D2D2D2;
+                            border-radius: 50%;
+                            behavior:url(pie.htc);
+                        }
+                    }
+                }
+            }
+            .sdc-times {
+                padding: 20px 20px 0px 20px;
+                ul {
+                    overflow: hidden;
+                }
+                li {
+                    width: 100 / 12 * 1%;
+                    float: left;
+                    text-align: center;
+                    span {
+                        color: #BEBEBE;
+                        font-size: 20px;
+                        line-height: 1.5;
+                    }
+                }
+            }
         }
         .seat-plan {
+            position: relative;
             .bgc-g {
                 padding: 18px;
             }
             .saccount-header {
-                padding: 12px 10px 12px 17px;
+                padding: 13px 10px 17px 17px;
                 border-bottom: 2px solid #303030;
                 position: relative;
                 span {
@@ -329,10 +576,69 @@
                 .bgc-g {
                     position: absolute;
                     right: 10px;
-                    top: 8px;
-                    padding: 5px 9px;
+                    top: 10px;
+                    padding: 6px 10px;
                     color: #BEBEBE;
                     font-size: 20px;
+                }
+            }
+            .saccount-content {
+                .img-box {
+                    padding-top: 34px;
+                    width: 178px;
+                    left: 3px;
+                }
+                .spc-title {
+                    text-align: center;
+                    color: #fff;
+                    font-size: 24px;
+                    line-height: 1.5;
+                }
+                .spc-net {
+                    overflow: hidden;
+                    padding: 33px 60px 16px;
+                    i {
+                        width: 16px;
+                        height: 20px;
+                        background-repeat: no-repeat;
+                        background-size: 100% 100%;
+                        background-position: center;
+                    }
+                    em {
+                        font-size: 26px;
+                        color: #999;
+                        line-height: 1.6;
+                    }
+                }
+                .spc-hide {
+                    text-align: center;
+                    font-size: 15px;
+                    color: #999;
+                    line-height: 1.6;
+                }
+            }
+            .btn-box {
+                width: 92px;
+                height: 92px;
+                background-image: url('../image/b-2.png');
+                background-repeat: repeat-x;
+                background-size: 1px 100%;
+                background-position: center;
+                border-radius: 50%;
+                behavior:url(pie.htc);
+                text-align: center;
+                line-height: 92px;
+                color: #fff;
+                font-size: 21px;
+                position: absolute;
+                bottom: -15px;
+                left: 50%;
+                margin-left: -46px;
+                box-shadow: 0 2px 5px 0px #292524;
+                z-index: 2;
+                cursor: pointer;
+                &:active, &:hover {
+                    opacity: .9;
                 }
             }
         }
@@ -341,11 +647,10 @@
 // 测试
 .test {
     overflow: auto;
-    transform: scale(.8);
-    transform-origin: 0 0;
+    // transform: scale(.8);
+    // transform-origin: 0 0;
     width: 1960px;
-    height: 1080px;
-    min-height: 1080px;
+    height: 1101px;
     background-image: url('../image/bg.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -360,7 +665,7 @@
     }
     .bgc-g {
         background-color: transparent;
-        border: 1px solid red;
+        // border: 1px solid red;
     }
 }
 
@@ -400,6 +705,15 @@
 }
 .icon-msg {
     background-image: url('../image/icon-1.png');
+}
+.icon-netup {
+    background-image: url('../image/a-1.png');
+}
+.icon-netDown {
+    background-image: url('../image/a-2.png');
+}
+.icon-netDown2 {
+    background-image: url('../image/a-3.png');
 }
 
 // 颜色
