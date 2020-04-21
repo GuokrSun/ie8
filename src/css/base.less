@@ -1,0 +1,158 @@
+@import "reset";
+
+.mr15 {
+    margin-right: 15px;
+}
+
+/* 首页 */
+.index {
+    width: 100%;
+    height: 100%;
+    width: 1960px;
+    height: 1080px;
+    min-height: 1080px;
+    background-image: url('../image/bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    padding-left: 300px;
+    &>div{
+        position: relative;
+        z-index: 2;
+        opacity: .9;
+        height: 100%;
+    }
+    // 导航区
+    .menu {
+        width: 300px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        overflow: hidden;
+        padding-top: 414px;
+        // background-color: #292929;
+        .logo {
+            padding: 53px 0 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            .img-box {
+                width: 114px;
+                padding-right: 30px;
+                box-sizing: content-box;
+            }
+        }
+        .userInfo {
+            position: absolute;
+            top: 130px;
+            left: 0;
+            width: 100%;
+            .img-box {
+                width: 120px;
+                height: 120px;
+                // behavior: url(pie.htc);
+                border-radius: 50%;
+                overflow: hidden;
+                margin-bottom: 22px;
+            }
+            color: #fff;
+            text-align: center;
+            line-height: 1.6;
+            h4 {
+                font-size: 26px;
+                font-weight: 500;
+                padding-right: 6px;
+            }
+            p {
+                font-size: 20px;
+                padding-right: 3px;
+                letter-spacing: -.5px;
+                font-weight: 600;
+            }
+        }
+        .nav {
+            overflow-y: auto;
+            height: 100%;
+            position: relative;
+            padding-bottom: 84px;
+            border-top: 3px solid #5C5C5C;
+            li {
+                border-bottom: 3px solid #5C5C5C;
+                border-top: 1px solid transparent;
+            }
+            .loginout {
+                border: none;
+                position: absolute;
+                bottom: 30px;
+                left: 0;
+                width: 100%;
+            }
+            a {
+                display: block;
+                padding: 22px 30px 26px 45px;
+                color: #868686;
+                font-size: 24px;
+                line-height: 1;
+                &.nav-cur, &:active, &:hover {
+                    color: #C7C7C7;
+                }
+                &.nav-cur {
+                }
+                i {
+                    width: 28px;
+                    height: 28px;
+                    margin-right: 10px;
+                    position: relative;
+                    top: 4px;
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                    background-position: center;
+                }
+                .mr15 {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+    // 内容区
+    .page {
+        padding: 45px 15px;
+        .header {
+            h3 {}
+            .btn-msgback {}
+        }
+        .content {}
+    }
+}
+
+// 图标
+.icon-data {
+    background-image: url('../image/nav-1.png');
+}
+.icon-user {
+    background-image: url('../image/nav-2.png');
+}
+.icon-change {
+    background-image: url('../image/nav-3.png');
+}
+.icon-use {
+    background-image: url('../image/nav-4.png');
+}
+.icon-pay {
+    background-image: url('../image/nav-5.png');
+}
+.icon-other {
+    background-image: url('../image/nav-6.png');
+}
+.icon-loginout {
+    background-image: url('../image/nav-7.png');
+}
+
+// 颜色
+.bgc-g {
+    background-color: #292929;
+    border-radius: 10px;
+    behavior:url(pie.htc);
+}

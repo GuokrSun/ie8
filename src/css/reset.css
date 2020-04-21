@@ -1,0 +1,134 @@
+/* 初始化 */
+html,
+body,
+header,
+footer,
+nav,
+header,
+footer,
+div,
+ul,
+li,
+img,
+a,
+span,
+em,
+form,
+p,
+i,
+label,
+input,
+button,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-style: normal;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  background-color: #fff;
+  font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+nav,
+header,
+footer {
+  display: block;
+  position: relative;
+}
+img,
+a,
+button,
+em,
+label,
+textarea,
+span,
+i {
+  display: inline-block;
+}
+img {
+  width: 100%;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+a:visited {
+  text-decoration: none;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+label {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+input,
+button,
+textarea {
+  border: 0;
+  font-size: 1em;
+  line-height: 1em;
+  font-family: sans-serif;
+  text-decoration: none;
+  -webkit-appearance: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+button {
+  outline: none;
+  cursor: pointer;
+}
+/* 结构 */
+body {
+  overflow: hidden;
+  position: relative;
+}
+.img-box {
+  position: relative;
+  margin: 0 auto;
+  font-size: 0;
+}
+.imgCenter {
+  height: 100%;
+  object-fit: cover;
+}
+.poaCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.poa100 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.bgc {
+  background-size: contain;
+  background-position: center;
+}
+.bgs {
+  background-size: cover;
+  background-position: center;
+}
+.bga {
+  background-size: 100% 100%;
+  background-position: center;
+}
