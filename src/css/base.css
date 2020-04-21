@@ -161,6 +161,7 @@ body {
 }
 /* 首页 */
 .index {
+  overflow: auto;
   width: 100%;
   height: 100%;
   min-width: 1780px;
@@ -214,6 +215,8 @@ body {
 .index .menu .userInfo .img-box img {
   behavior: url(pie.htc);
   border-radius: 50%;
+  position: relative;
+  z-index: 1;
 }
 .index .menu .userInfo h4 {
   font-size: 26px;
@@ -336,6 +339,8 @@ body {
 }
 .index .page .content .seat > .bgc-g {
   height: 100%;
+  position: relative;
+  z-index: 1;
 }
 .index .page .content .seat .btn-g {
   text-align: center;
@@ -777,7 +782,6 @@ body {
   opacity: 0.9;
 }
 .test {
-  overflow: auto;
   width: 1960px;
   height: 1101px;
   background-image: url('../image/bg.png');
